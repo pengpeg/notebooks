@@ -56,13 +56,18 @@ OPENCV=1
 方法一：
 在终端执行下面命令（只对当前终端有效，新终端需重新设置）
 ```
-export PATH = /usr/local/cuda-8.0/bin:$PATH
+export PATH=/usr/local/cuda-8.0/bin:$PATH
+#export LIBRARY_PATH=/usr/local/cuda-8.0/lib64：$LIBRARY_PATH
 export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64：$LD_LIBRARY_PATH
 ```
 方法二：
 将上述命令写到`~/.bashrc`文件中，此时对当前用户有效。（对已经打开的终端无效，需打开新的终端。或使用source命令执行这个文件中命令）
 方法三：
 将上述命令写到`/etc/profile`中，对所有用户有效。（１.使用source执行此文件使其立即生效。２.不推荐这种方法。）
+**三个环境变量说明**
+`PATH`：可执行程序的查找路径
+`LIBRARY_PATH`：编译程序时动态链接库查找路径（一般通过在gcc命令中使用-L指定，所以一般不必设置这个变量）
+`LD_LIBRARY_PATH`：运行程序时动态链接库查找路径
 
 
 
