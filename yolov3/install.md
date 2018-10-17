@@ -49,8 +49,20 @@ OPENCV=1
 ./darknet imtest data/eagle.jpg
 ```
 
+-----
 
-
+## CUDA环境变量设置
+1. 安装玩CUDA后设置环境变量：
+方法一：
+在终端执行下面命令（只对当前终端有效，新终端需重新设置）
+```
+export PATH = /usr/local/cuda-8.0/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-8.0/lib64：$LD_LIBRARY_PATH
+```
+方法二：
+将上述命令写到`~/.bashrc`文件中，此时对当前用户有效。（对已经打开的终端无效，需打开新的终端。或使用source命令执行这个文件中命令）
+方法三：
+将上述命令写到`/etc/profile`中，对所有用户有效。（１.使用source执行此文件使其立即生效。２.不推荐这种方法。）
 
 
 
