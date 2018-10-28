@@ -1,5 +1,5 @@
 # YOLO:Real-Time Object Detection
-YOLO(You Only Lool Once) 是一个高性能实时目标检测系统。在ＣＯＣＯ的测试集上得到５７．９ｍAP的结果，同时使用Titan X时检测速度达到３０FPS。
+YOLO(You Only Lool Once) 是一个高性能实时目标检测系统。在COCO的测试集上得到57.9ｍAP的结果，同时使用Titan X时检测速度达到30FPS。
 ## 与其他检测算法对比
 YOLOv3非常快而且精确。IOU阈值为0.5时的mAP标准，YOLOv3和Focal Loss精度差不多，但是前者比后者的检测速度快了４倍。不需重新训练，只需选择不同大小的模型就可以在精度和速度间调整。
 ## 在COCO数据集上的测试结果
