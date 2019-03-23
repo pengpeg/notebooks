@@ -29,3 +29,10 @@ sudo ./src/catkin/bin/catkin_make_isolated --install -DCMAKE_BUILD_TYPE=Release 
 curl https://raw.githubusercontent.com/opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_120.i > vgg_generated_120.i
 ```
 （上面指令可以参考cmake修改）
+8.出现找不到cuda.h，仍是因为下载文件不全，目前方法在opencv3的cmake文件夹中取消cuda选项（因为反正不用cuda）。
+9.经历漫长编译安装后，配置完路径。使用rospack find查看sensor_msgs，cv_bridge都存在。
+
+## 树莓派3B+安装ros
+1.目前Ubuntu mate对3B+兼容问题，因此使用raspbian系统编译安装ros，但选择编译的时recomm的基础版导致却一些包。
+2.当时的方法是安装的ros官方给的安装好ros的Ubuntu系统，造成mxnet也要重新编译。
+3.现在可以同树莓派zero w一样，编译Desktop版。
