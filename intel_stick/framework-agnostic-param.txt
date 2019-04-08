@@ -7,7 +7,8 @@ Framework-agnostic parameters:
   --input_model INPUT_MODEL, -w INPUT_MODEL, -m INPUT_MODEL
                         Tensorflow*: a file with a pre-trained model (binary
                         or text .pb file after freezing). Caffe*: a model
-                        proto file with model weights
+                        proto file with model weights. 
+                        Mxnet*: .params file's path.
   --model_name MODEL_NAME, -n MODEL_NAME
                         Model_name parameter passed to the final create_ir
                         transform. This parameter is used to name a network in
