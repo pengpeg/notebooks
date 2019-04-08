@@ -1,0 +1,9 @@
+ π”√image-classification÷–train_cifar10.py≤‚ ‘
+cpu: i5-7400
+gpu: gtx1050 4G(notebook)
+input_size: (128, 3, 28, 28)
+net: resnet101
+
+openblas(no mkldnn) speed: 18samples/sec
+mkldnn speed: 85samples/sec
+cudnn speed : 420samples/sec
