@@ -37,3 +37,9 @@ string path = "/home/chen/inference_engine_samples/intel64/Release/lib/libcpu_ex
 IExtensionPtr extension_ptr = make_so_pointer<IExtension>(path.c_str());
 plugin.AddExtension(extension_ptr);
 ```
+
+## 使用darknet训练的yolov2垃圾检测模型
+1.在由darknet模型转为tf模型时，darkflow提示模型文件字节数多4个字节，解决方法：在`darkflow/utils/loader.py`中代码
+`self.offset = 16`
+改为：
+`self.offset = 20`
