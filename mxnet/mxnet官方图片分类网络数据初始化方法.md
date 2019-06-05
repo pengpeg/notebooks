@@ -14,5 +14,5 @@ transformed_img = gluoncv.data.transforms.presets.imagenet.transform_eval(img)
 第一步：保持图片比例不变，resize图片短边为256；
 第二步：中心裁剪出224x224大小的图片；
 第三步：将HxWxC且值范围[0-255]的数组转为CxHxW且值范围[0-1)的float32数组，即所有值除以255；
-第四步：normalize，即给出3个通道的mean和std（m1,m2,m3,s1,s2,s3），`output[i] = (input[i] - mi) / si`
+第四步：normalize，即给出3个通道的mean和std（m1,m2,m3,s1,s2,s3）（默认值mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)），`output[i] = (input[i] - mi) / si`
 第五步：扩充维度，成为1xCxHxW
