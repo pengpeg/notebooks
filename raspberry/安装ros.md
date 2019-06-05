@@ -36,3 +36,8 @@ curl https://raw.githubusercontent.com/opencv/opencv_3rdparty/fccf7cd6a4b12079f7
 1.目前Ubuntu mate对3B+兼容问题，因此使用raspbian系统编译安装ros，但选择编译的时recomm的基础版导致却一些包。
 2.当时的方法是安装的ros官方给的安装好ros的Ubuntu系统，造成mxnet也要重新编译。
 3.现在可以同树莓派zero w一样，编译Desktop版。
+
+##再次在树莓派3B+(系统raspbian)编译ros
+1.为apt、ros、pip换好国内源
+2.网络良好（部分从github下载）
+3.按照官方编译方法（编译Desktop版）不在出现问题
