@@ -49,6 +49,7 @@ cd incubator-mxnet
 mkdir -p build && cd build
 
 cmake -DUSE_SSE=OFF -DUSE_CUDA=OFF -DUSE_OPENCV=ON -DUSE_OPENMP=ON -DUSE_MKL_IF_AVAILABLE=OFF -DUSE_SIGNAL_HANDLER=ON -DCMAKE_BUILD_TYPE=Release -GNinja ..
+
 ninja -j$(nproc)
 
 </code>
