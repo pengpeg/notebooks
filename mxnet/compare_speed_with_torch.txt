@@ -1,0 +1,3 @@
+以mcd的mnist_2_usps_alluse_no_k_4实验为例
+torch训练用时14分40秒，结果94%
+mxnet训练用时6分8秒，Uniform初始化71%，Xavier初始化90%
